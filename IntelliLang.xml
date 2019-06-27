@@ -7,7 +7,7 @@
     </injection>
     <injection language="JavaScript" injector-id="xml">
       <display-name>stream-source</display-name>
-      <place disabled="true"><![CDATA[xmlTag().withLocalName(string().equalTo("stream-source")).withNamespace(string().equalTo("http://www.w3.org/1999/html"))]]></place>
+      <place><![CDATA[xmlTag().withLocalName(string().equalTo("stream-source")).withNamespace(string().equalTo("http://www.w3.org/1999/html"))]]></place>
     </injection>
     <injection language="JavaScript" injector-id="xml">
       <display-name>view-source</display-name>
