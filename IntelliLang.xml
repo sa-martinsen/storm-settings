@@ -1,12 +1,17 @@
 <application>
   <component name="LanguageInjectionConfiguration">
     <injection language="JavaScript" injector-id="xml">
+      <display-name>m2</display-name>
+      <value-pattern>view-source|stream-source</value-pattern>
+      <place><![CDATA[xmlTag().withLocalName(string().matches("<none>"))]]></place>
+    </injection>
+    <injection language="JavaScript" injector-id="xml">
       <display-name>stream-source</display-name>
-      <place><![CDATA[xmlTag().withLocalName(string().equalTo("stream-source")).withNamespace(string().equalTo("http://www.w3.org/1999/html"))]]></place>
+      <place disabled="true"><![CDATA[xmlTag().withLocalName(string().equalTo("stream-source")).withNamespace(string().equalTo("http://www.w3.org/1999/html"))]]></place>
     </injection>
     <injection language="JavaScript" injector-id="xml">
       <display-name>view-source</display-name>
-      <place><![CDATA[xmlTag().withLocalName(string().equalTo("view-source")).withNamespace(string().equalTo("http://www.w3.org/1999/html"))]]></place>
+      <place disabled="true"><![CDATA[xmlTag().withLocalName(string().equalTo("view-source")).withNamespace(string().equalTo("http://www.w3.org/1999/html"))]]></place>
     </injection>
   </component>
 </application>
